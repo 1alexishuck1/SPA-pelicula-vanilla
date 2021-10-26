@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: #222831;
+}
+
+a{
+    text-decoration: none;
+}
+
+.Header{
+    width: 100%;
+    height: 50px;
+    background-color: #30475E;
+}
+
+.header-a a {
+    height: 50px;
+    color: #fff;
+    font-family: 'Stick No Bills', sans-serif;
+    font-size:40px;
+    margin-left: 40px;
+
+}
+
+.Main h3{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size:25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 70px;
+    border-bottom: 2px solid #F05454;
+}
+
+
+.pelicula{
+    width: 280px;
+    height: 300px;
+    background-color: #F05454;
+    margin-top: 20px;
+    display:grid;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 2px 2px 5px rgb(26, 26, 26);
+    border-radius: 5px;
+}
+
+.pelicula a{
+    color: #fff;
+}
+
+.pelicula p,
+.pelicula h2{
+    margin-left: 5px;
+}
+
+.pelicula h2{
+    font-size: 18px;
+}
+
+.pelicula p{
+    margin-top:5px
+}
+
+
+.contenedor-div {
+    display:grid;
+}
+
+
+.pelicula img{
+    width: 280px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    background-color: #222831;
+    width: 90%;
+    margin: auto;
+    grid-gap: 10px;
+}
+
+.pelicula:hover{
+    transform: scale(1.07);
+    transform-origin: center;
+    transition: .3s ease all;
+}
+
+
+
+@media (max-width: 1260px) {
+    .contenedor{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .pelicula{
+        width: 310px;
+        height: 300px;
+    }
+
+    .pelicula img{
+        width: 310px;
+        height: 200px;
+    }
+    
+    
+}
+
+@media (max-width: 1050px) {
+    .pelicula{
+        width: 280px;
+        height: 300px;
+    }
+
+    .pelicula img{
+        width: 280px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) {
+    .pelicula{
+        width: 260px;
+        height: 280px;
+    }
+
+    .pelicula img{
+        width: 260px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 875px) {
+    .contenedor{
+        grid-template-columns: repeat(2,1fr);
+        width: 70%;
+    }
+
+    .pelicula{
+        width: 280px;
+        height: 300px;
+    }
+
+    .pelicula img{
+        width: 280px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 685px) {
+    .contenedor{
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+    }
+
+    .pelicula{
+        width: 250px;
+        height: 280px;
+        
+    }
+
+    .pelicula img{
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 550px) {
+    .contenedor{
+        grid-template-columns: 1fr;
+        width: 40%;
+    }
+}
+
+@media (max-width: 370px) {
+    .contenedor{
+        grid-template-columns: 1fr;
+        width: 70%;
+    }
+}
+
+
+
+
+
